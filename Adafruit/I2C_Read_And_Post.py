@@ -1,15 +1,16 @@
 import json
 import urllib2
+import ConfigParser
 from OmegaExpansion import onionI2C
 from time import sleep
 
-# BEGIN Configuration
-postUrl = 'https://wheresmyguns.herokuapp.com/devices/57605a9ee5c89a0300657b12'
-postRate = 0.25  # In Seconds
-# END Configuration
+config = ConfigParser.RawConfigParser()
+config.read('where_are_my_guns.cfg')
 
-i2c = onionI2C.OnionI2C()
+postUrl = config.get("Where Are My Guns", "post_url")
+postRate = config.getfloat("Where Are My Guns", "post_rate")
 ARDUINO_ADDR = 0x08
+i2c = onionI2C.OnionI2C()
 
 
 def ReadLatestSentence():
