@@ -62,7 +62,7 @@ The procedure is simpler for the Omega Expansion:
   URL=https://YOUR_HIP_URL_HERE.io
   RATE=1000 # In ms
   ```
-3. Install Node
+3. Install Dependencies
 
   ```bash
   opkg update
