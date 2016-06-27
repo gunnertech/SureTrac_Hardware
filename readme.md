@@ -1,6 +1,5 @@
 TODO:
     Update Instructables URL
-    Code Cleanup
 
 # WheresMyGuns - aka SureTrac an Open Source GPS tracker for your web app
 
@@ -57,7 +56,11 @@ Since the Omega Expansion has a rate-locked GPS, you shouldn't go faster than th
 The procedure is simpler for the Omega Expansion:
 
 1. Copy the gps.js file to /home/root (or just ~ if your logged in as root)
-2. Create a .env file similar to below in the same directory at the gps.js file
+2. Create a .env file similar to below in the same directory as the gps.js file
+  ```env
+  URL=https://YOUR_HIP_URL_HERE.io
+  RATE=1000 # In ms
+  ```
 3. Install Node
 
   ```bash
