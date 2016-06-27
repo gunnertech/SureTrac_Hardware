@@ -65,6 +65,7 @@ The procedure is simpler for the Omega Expansion:
   opkg install node
   cd ~/
   npm install dotenv
+  npm install needle
   ```
 3. Make the script run at startup by adding the following to your /etc/rc.local file
 
