@@ -1,5 +1,4 @@
 TODO:
-    Update link for the specific GPS update line
     Update Instructables URL
     Code Cleanup
 
@@ -49,7 +48,7 @@ If you want to refresh the GPS at 1Hz or slower here is the procedure:
   ```
 
 ### Faster than 1Hz
-The procedure is similar to above except you need to change the Arduino code to also poll the GPS module faster - this is simple all you have to do is change the code at this [line]()
+The procedure is similar to above except you need to change the Arduino code to also poll the GPS module faster - this is simple all you have to do is change the code at these two [lines](/Adafruit/WheresMyGuns/WheresMyGuns.ino#L24-25)
 
 ## Omega Expansion
 
