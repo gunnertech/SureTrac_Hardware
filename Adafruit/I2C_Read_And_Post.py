@@ -5,10 +5,10 @@ from OmegaExpansion import onionI2C
 from time import sleep
 
 config = ConfigParser.RawConfigParser()
-config.read('where_are_my_guns.cfg')
+config.read('suretrac.cfg')
 
-postUrl = config.get("Where Are My Guns", "post_url")
-postRate = config.getfloat("Where Are My Guns", "post_rate")
+postUrl = config.get("SureTrac", "post_url")
+postRate = config.getfloat("SureTrac", "post_rate")
 ARDUINO_ADDR = 0x08
 i2c = onionI2C.OnionI2C()
 
