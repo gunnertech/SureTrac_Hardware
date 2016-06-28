@@ -10,7 +10,7 @@ Depending on which you prefer to use we have two different instruction sets for 
 
 An Instructable for the Hardware setup: [Link] (http://www.instructables.com/id/SureTrac-Open-Source-Software-Integrated-GPS/)
 
-An Example server source: [Link] (https://github.com/gunnertech/WheresMyGuns)
+An Example server source: [Link] (https://github.com/gunnertech/SureTrac_Example_Server)
 
 ## Arduino/Atmega
 
@@ -21,10 +21,10 @@ If you want to refresh the GPS at 1Hz or slower here is the procedure:
 
 1. Flash the Arduino/Arduino Dock with the .ino file
 2. Move the .py file to /home/root (or just ~ if your logged in as root)
-3. Create a "where_are_my_guns.cfg" file in the same directory as the .py file and modify the rates and URL. Here is an example file:
+3. Create a "suretrac.cfg" file in the same directory as the .py file and modify the rates and URL. Here is an example file:
   
   ```cfg
-  [Where Are My Guns]
+  [SureTrac]
   post_url: 'https://YOUR_URL_HERE.TLD/' # Where we'll HTTP POST the NMEA sentence to
   post_rate: 1 # The rate at which the Omega will push the NMEA sentence to the server
   ```
